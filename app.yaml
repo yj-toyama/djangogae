@@ -1,0 +1,9 @@
+runtime: python37
+service: testdjango
+
+handlers:
+  - url: /static
+    static_dir: static/
+
+  - url: /.*
+    script: auto
